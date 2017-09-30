@@ -13,10 +13,10 @@ const fs = require('fs');
 glob('**/*.jsx', function(er, files) {
   console.log(files);
   files.forEach(function(file) {
-    let name = path.join(__dirname, file);
-    let content = fs.readFileSync(name, { encoding: 'utf-8' });
-    let res = babelCore.transform(lefty.parse(content), {
-      presets: ['babel-preset-es2015'],
+    const name = path.join(__dirname, file);
+    const content = fs.readFileSync(name, { encoding: 'utf-8' });
+    const res = babelCore.transform(lefty.parse(content), {
+      presets: [ 'babel-preset-es2015' ],
     }).code;
     fs.writeFileSync(name.replace(/\.jsx$/, '.js'), res);
   });
