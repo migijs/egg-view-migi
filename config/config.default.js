@@ -5,5 +5,13 @@
 'use strict';
 
 module.exports = {
-  migi: {},
+  migi: {
+    cache: true,
+  },
+  view: {
+    mapping: {
+      '.js': 'migi',
+      '.jsx': 'migi',
+    },
+  },
 };

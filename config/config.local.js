@@ -5,5 +5,7 @@
 'use strict';
 
 module.exports = {
-  logo: {},
+  migi: {
+    cache: false,
+  },
 };
