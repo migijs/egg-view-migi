@@ -35,7 +35,7 @@
     "webstorm-disable-index": "^1.2.0"
   },
   "scripts": {
-    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run pre && npm run test-local",
+    "test": "npm run lint -- --fix && npm run pre && npm run test-local",
     "test-local": "egg-bin test",
     "pre": "node jsx",
     "cov": "egg-bin cov",
