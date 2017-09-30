@@ -1,5 +1,5 @@
-1.0.0 / 2017-09-30
+1.0.1 / 2017-09-30
 ==================
 
-  * feat: init project
+  * feat: first version
   
