@@ -1,6 +1,6 @@
 {
   "name": "egg-view-migi",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "egg view plugin for migi",
   "eggPlugin": {
     "name": "migi",
@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "lefty": "~3.8.0",
-    "migi": "~3.8.3"
+    "migi": "~3.9.0"
   },
   "devDependencies": {
     "autod": "^2.8.0",
