@@ -5,9 +5,13 @@
 'use strict';
 
 const migi = require('migi');
+const MIGI = Symbol('Application#migi');
 
 module.exports = {
   get migi() {
-    return migi;
+    if(!this[MIGI]) {
+      this[MIGI] = migi;
+    }
+    return this[MIGI];
   },
 };
