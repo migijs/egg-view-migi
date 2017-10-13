@@ -9,7 +9,7 @@ const MIGI = Symbol('Application#migi');
 
 module.exports = {
   get migi() {
-    if(!this[MIGI]) {
+    if (!this[MIGI]) {
       this[MIGI] = migi;
     }
     return this[MIGI];
