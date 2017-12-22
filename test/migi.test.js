@@ -21,7 +21,7 @@ describe('test/egg-view-migi.test.js', () => {
     return app.ready();
   });
   beforeEach(() => {
-    migi.Element.resetUid();
+    migi.resetUid();
   });
 
   after(() => app.close());
