@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "lefty": "~3.8.1",
-    "migi": "~3.9.1"
+    "migi": "~4.0.0"
   },
   "devDependencies": {
     "autod": "^2.8.0",
