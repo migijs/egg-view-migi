@@ -20,9 +20,6 @@ describe('test/egg-view-migi.test.js', () => {
     });
     return app.ready();
   });
-  beforeEach(() => {
-    migi.resetUid();
-  });
 
   after(() => app.close());
   afterEach(mm.restore);
@@ -59,6 +56,20 @@ describe('test/egg-view-migi.test.js', () => {
     return app.httpRequest()
       .get('/rs')
       .expect('<small migi-uid="0">123</small>')
+      .expect(200);
+  });
+
+  it('should renderAttr', () => {
+    return app.httpRequest()
+      .get('/attr')
+      .expect('<div class="c" title="title" migi-uid="2"><input readonly="true" value="123" migi-uid="1"/></div>')
+      .expect(200);
+  });
+
+  it('should renderBind', () => {
+    return app.httpRequest()
+      .get('/bind')
+      .expect('<div migi-uid="1">1</div>')
       .expect(200);
   });
 });

@@ -10,4 +10,6 @@ module.exports = app => {
   app.get('/vd', 'view.vd');
   app.get('/fn', 'view.fn');
   app.get('/rs', 'view.rs');
+  app.get('/attr', 'view.attr');
+  app.get('/bind', 'view.bind');
 };

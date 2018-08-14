@@ -9,3 +9,6 @@ exports.view = {
   defaultViewEngine: 'migi',
   defaultExtension: '.js',
 };
+exports.migi = {
+  cache: false,
+};
