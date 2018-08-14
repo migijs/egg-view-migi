@@ -8,7 +8,6 @@ const path = require('path');
 const request = require('supertest');
 const mm = require('egg-mock');
 const fs = require('fs');
-const migi = require('migi');
 
 const fixtures = path.join(__dirname, 'fixtures');
 
