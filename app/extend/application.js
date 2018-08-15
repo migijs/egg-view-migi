@@ -4,7 +4,7 @@
 
 'use strict';
 
-const migi = require('migi-server');
+const migi = require('migi');
 const MIGI = Symbol('Application#migi');
 
 module.exports = {
