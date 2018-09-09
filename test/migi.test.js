@@ -71,4 +71,11 @@ describe('test/egg-view-migi.test.js', () => {
       .expect('<div migi-uid="1">1</div>')
       .expect(200);
   });
+
+  it('should render constructor with one param', () => {
+    return app.httpRequest()
+      .get('/constructor')
+      .expect('<p migi-uid="1">123</p>')
+      .expect(200);
+  });
 });

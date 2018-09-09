@@ -12,4 +12,5 @@ module.exports = app => {
   app.get('/rs', 'view.rs');
   app.get('/attr', 'view.attr');
   app.get('/bind', 'view.bind');
+  app.get('/constructor', 'view.constructor');
 };

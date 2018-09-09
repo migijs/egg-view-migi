@@ -32,3 +32,7 @@ exports.attr = async function(ctx) {
 exports.bind = async function(ctx) {
   await ctx.render('bind', { value: 1 });
 };
+
+exports.constructor = async function(ctx) {
+  await ctx.render('constructor', { a: 123 });
+};
